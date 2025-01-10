@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página Principal</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <!-- Header -->
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Proyecto Universae</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="plantilla.js" defer></script>
+</head>
+<body>
     <header>
-      <h1>Bienvenido a Mi Aplicación</h1>
-      <nav>
-        <a href="/empleados">Empleados</a>
-      </nav>
+        <h1>Bienvenidos a mi Empresa</h1>
+        <nav>
+            <ul>
+                <li><a href="empleados.html">Ver Empleados</a></li>
+                <li><a href="datos.html">Ver Datos</a></li>
+            </ul>
+        </nav>
+        <h2>Página de Prueba</h2>
     </header>
-
-    <!-- Main -->
     <main>
-      <div id="app">
-        <p>Este es el contenedor principal de la página.</p>
-        <img src="./images/foto1.jpg" alt="Imagen de ejemplo" width="300" />
-      </div>
+        <div id="app"></div>
+        <figure>
+            <img src="oficina.jpg" alt="Interior de una oficina moderna con escritorios y sillas">
+        </figure>
     </main>
-
-    <!-- Footer -->
     <footer>
-      <p>&copy; 2024 Mi Proyecto Express</p>
+        <div id="footer-container"></div>
     </footer>
-  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.4/purify.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>

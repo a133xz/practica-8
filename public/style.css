@@ -1,0 +1,148 @@
+/* Estilos generales */
+body {
+    background-color: #705F2E;
+    text-align: center;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+/* Encabezado */
+header {
+    background-color: #EFE8D5;
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1em 0;
+}
+
+/* Contenido principal */
+main {
+    background-color: #ECD5F0;
+    color: blue;
+    font-size: medium;
+    padding: 2em;
+}
+
+/* Aplicación dinámica */
+#app {
+    color: red;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    margin: 1em 0;
+}
+
+/* Pie de página */
+footer {
+    background-color: #D5F0E8;
+    padding: 1em 0;
+}
+
+/* Redes sociales y otras listas en el footer */
+#footer-list {
+    list-style: none; /* Eliminar las viñetas */
+    padding: 0; /* Eliminar padding predeterminado */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    display: flex; /* Mostrar elementos en línea horizontal */
+    gap: 1em; /* Espaciado entre elementos */
+}
+
+#footer-list li {
+    margin: 0; /* Asegurar márgenes consistentes */
+}
+
+#footer-list a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footer-list a:hover {
+    text-decoration: underline;
+}
+
+/* Contacto: Dirección y Teléfono */
+.direccion,
+.telefono {
+    color: blue;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0.5em 0; /* Espaciado consistente */
+}
+
+/* Navegación (opcional para un diseño limpio) */
+nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 1em 0;
+    display: inline-flex; /* Alinear elementos horizontalmente */
+    gap: 1em; /* Espacio entre elementos */
+}
+
+nav a {
+    color: blue;
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 80%; /* Ajusta el ancho de la tabla */
+    margin: 20px auto; /* Centra la tabla horizontalmente */
+    border-collapse: collapse; /* Elimina los espacios entre celdas */
+    background-color: white; /* Fondo blanco para la tabla */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para toda la tabla */
+}
+
+/* Encabezados de la tabla */
+th {
+    background-color: #f4f4f4; /* Fondo claro para los encabezados */
+    color: #333; /* Color de texto */
+    font-weight: bold;
+    text-align: center; /* Alinear texto al centro */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Bordes definidos */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interna */
+}
+
+/* Celdas del cuerpo de la tabla */
+td {
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Bordes definidos */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Sombras alternadas para filas */
+tr:nth-child(even) td {
+    background-color: #f9f9f9; /* Fondo para filas pares */
+}
+
+tr:nth-child(odd) td {
+    background-color: #fff; /* Fondo para filas impares */
+}
+
+/* Resaltado al pasar el mouse */
+tr:hover td {
+    background-color: #f1f1f1; /* Fondo al pasar el mouse */
+}
+
+/* Sombreado para celdas principales (encabezados y destacados) */
+th {
+    background-color: #d5f0e8; /* Color destacado */
+    color: #333;
+    font-size: larger;
+}
+
+/* Opcional: Ajuste de la tabla en pantallas pequeñas */
+@media (max-width: 768px) {
+    table {
+        width: 100%; /* Tabla ajusta su ancho al 100% */
+    }
+
+    th, td {
+        font-size: smaller; /* Texto más pequeño para pantallas pequeñas */
+    }
+}
